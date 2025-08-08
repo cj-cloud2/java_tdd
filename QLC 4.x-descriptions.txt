@@ -1,0 +1,23 @@
+The Unit Test
+
+Write the unit test first for a CUT called FileLoader. It should only have one public method on it. Once the test is written, develop the CUT to pass the test.
+public int loadFile(string fname)
+
+Question: What’s the weakness in this design?
+Quicklab (QL-4.1)
+Using Lambdas
+
+Create a new test that allows a lambda expression to be passed to loadFile() on the CUT.
+Add a new loadFile() method to the CUT that takes a lambda expression. A stub can then be passed as the lambda expression.
+Hint: use a delegate to create the lambda signature.
+Quicklab (QL-4.2)
+Using Stubs
+
+Add a new test that makes use of the ability to pass a lambda to loadFile() on CUT. In the lambda substitute, the data read from a file with dummy data in a List. Each item in the list representing one line in a file.
+Quicklab (QL-4.3)
+Replacing the Stub with a Mock
+
+Wrap the C# library called File.ReadLines() in a normal class with a method matching File.ReadLines.
+Mock your wrapper class so that your ReadLines() returns dummy data.
+Pass a lambda to LoadFile. In the lambda call your mocked File object’s ReadLine().
+Quicklab (QL-4.4)
