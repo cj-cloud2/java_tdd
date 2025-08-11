@@ -1,3 +1,0 @@
-TransactionValidatorTest
-AccountServiceTest
-TemperatureSensorTest
