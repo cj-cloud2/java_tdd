@@ -9,7 +9,7 @@ Here are five progressively challenging TDD (Test-Driven Development) examples a
 
 
 
-**How to teach with these:**
+**What You Learn:**
 
 - Write each test method (red), see the failure.
 - Add/update the implementation for green.
