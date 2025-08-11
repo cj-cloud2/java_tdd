@@ -114,7 +114,14 @@ class DummyNotification implements Notification {}
 ### Service and Dummy Implementation
 
 ```java
-public class AccountService {}
+public class AccountService {  
+    public AccountService(Notification notification) {        
+    }
+    public int deposit(int amount) {    
+        //some logic for databasing(not to be implemented here)    
+        return amount;
+    }
+}
 
 interface Notification {
     void send(String user, String msg);
