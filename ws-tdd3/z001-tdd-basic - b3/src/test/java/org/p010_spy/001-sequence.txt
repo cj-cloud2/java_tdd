@@ -1,0 +1,5 @@
+BudgetTrackerTest
+TemperatureMonitorTest
+SimpleInterestCalculatorTest
+TransactionHistoryTest
+CurrencyConverterTest
