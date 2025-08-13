@@ -1,0 +1,8 @@
+InSpyder terminal
+
+
+cd to topic-manager folder, lke below,
+'D:\\BF\\c005_PyTdd_ws\\001_barc_tdd\\barclay\\find-highest-number\\topic-manager'
+
+!python -m unittest tests/test_topic_manager.py
+!python -m unittest tests/test_topic_manager.py
