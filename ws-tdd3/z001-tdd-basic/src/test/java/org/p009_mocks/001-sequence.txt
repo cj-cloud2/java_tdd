@@ -1,3 +1,0 @@
-OrderProcessorTest
-LoanApprovalServiceTest
-StockTradeServiceTest

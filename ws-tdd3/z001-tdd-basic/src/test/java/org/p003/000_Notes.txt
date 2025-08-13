@@ -1,6 +1,0 @@
-Sequense:
-CurrencyConverter
-SimpleInterestCalc
-TemperatureMonitor
-BudgetTracker
-TransactionHistory(Transaction is just a bean)
