@@ -42,7 +42,7 @@ def stub_get_employee_details(employee_id):
 class TestPayrollDeduction(unittest.TestCase):
     def test_salary_basic(self):
         net = calculate_net_salary(101, stub_get_employee_details)
-        self.assertEqual(net, 39500)  # Expected: 50000 - 20% - 2%
+        self.assertEqual(net, 39000)  # Expected: 50000 - 20% - 2%
 
 
 if __name__ == "__main__":
