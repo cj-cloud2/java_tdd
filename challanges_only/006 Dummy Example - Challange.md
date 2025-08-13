@@ -54,7 +54,7 @@ class TestInventory(unittest.TestCase):
     def test_item_quantity_basic(self):
         # Create a dummy log object and verify quantity for item ID 101
         # Call check_item_stock and validate the returned quantity matches expected
-        pass
+        
 ```
 
 ➡ Run it and get:
@@ -128,12 +128,12 @@ def stub_get_item_data(item_id):
 class TestInventory(unittest.TestCase):
     def test_item_quantity_basic(self):
         # Create a dummy log object and verify quantity for item ID 101
-        pass
+        
 
 
     def test_item_quantity_second(self):
         # Create a dummy log object and verify quantity for item ID 102
-        pass
+        
 ```
 
 Passes **only if function is generalised**, fails if hardcoded.
@@ -172,7 +172,7 @@ Add test for item not found:
     def test_item_not_found(self):
         # Create dummy log object and check for non-existing item ID
         # Assert that result is None
-        pass
+        
 ```
 
 

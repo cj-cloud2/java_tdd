@@ -48,7 +48,7 @@ def stub_get_transaction_data(transaction_id):
 class TestBanking(unittest.TestCase):
     def test_transaction_basic(self):
         # Create dummy log, call process_bank_transaction with transaction id 1001 and assert the returned amount is 1500
-        pass
+        
 
 
 if __name__ == "__main__":
@@ -136,12 +136,12 @@ def stub_get_transaction_data(transaction_id):
 class TestBanking(unittest.TestCase):
     def test_transaction_basic(self):
         # Create dummy log and verify that transaction id 1001 returns amount 1500
-        pass
+        
 
 
     def test_transaction_second(self):
         # Create dummy log and verify that transaction id 1002 returns amount 3200
-        pass
+        
 
 
 if __name__ == "__main__":
@@ -204,17 +204,17 @@ def stub_get_transaction_data(transaction_id):
 class TestBanking(unittest.TestCase):
     def test_transaction_basic(self):
         # Create dummy log and check that transaction id 1001 returns amount 1500
-        pass
+        
 
 
     def test_transaction_second(self):
         # Create dummy log and check that transaction id 1002 returns amount 3200
-        pass
+        
 
 
     def test_transaction_not_found(self):
         # Create dummy log and check that a non-existent transaction id returns None
-        pass
+        
 
 
 if __name__ == "__main__":
