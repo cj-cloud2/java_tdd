@@ -41,7 +41,7 @@ def stub_get_loan_data(loan_id):
 class TestFinance(unittest.TestCase):
     def test_interest_basic(self):
         # Call calculate_loan_interest with loan id 501 and verify the interest is 5000
-        pass
+        
 
 
 if __name__ == "__main__":
@@ -124,12 +124,12 @@ def stub_get_loan_data(loan_id):
 class TestFinance(unittest.TestCase):
     def test_interest_basic(self):
         # Verify correct interest for Tyler's loan (id 501)
-        pass
+        
 
 
     def test_interest_lower_rate(self):
         # Verify correct interest for Linda's loan (id 602)
-        pass
+        
 
 
 if __name__ == "__main__":
@@ -185,17 +185,17 @@ def stub_get_loan_data(loan_id):
 class TestFinance(unittest.TestCase):
     def test_interest_basic(self):
         # Verify interest calculation for Tyler's loan
-        pass
+        
 
 
     def test_interest_lower_rate(self):
         # Verify interest calculation for Linda's loan
-        pass
+        
 
 
     def test_interest_not_found(self):
         # Verify that a non-existent loan id returns None
-        pass
+        
 
 
 if __name__ == "__main__":
