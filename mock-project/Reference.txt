@@ -1,0 +1,7 @@
+def test_handle_credit_service_failure(self):
+        # Test Case 3
+        app = LoanApplication("Error Person", 5000, 12)
+        self.mock_credit.get_credit_score.side_effect = Exception("Service Down")
+        result = self.service.accept_application(app)
+        self.assertFalse(result)
+        self.mock_repo.save.assert_not_called()
