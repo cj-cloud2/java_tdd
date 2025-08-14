@@ -1,5 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
 # \#\# **Assignment 2 — Credit Score Integration**
 
 ### **Service goal:**
@@ -357,7 +355,3 @@ python -m unittest discover tests
 - **Assignment 2 tests** in `test_service_credit.py` verify new credit score logic.
 
 ***
-
-If you want, I can now **merge Assignment 1 and Assignment 2** into a single descriptive-comment version so the full project is documented in the same style.
-Would you like me to do that?
-

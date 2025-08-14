@@ -1,5 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
 # \#\# 📄 **Assignment 4 – Outcome Notification \& Persistence (Audit Trail)**
 
 **Service goal:**
@@ -506,7 +504,3 @@ You should see tests from:
 - Assignment 4 ✅
 
 ***
-
-If you want, I can now create a **full merged version** of Assignments 1–4 in this **commented form** so you have the complete project flow in one place.
-Do you want me to prepare that?
-

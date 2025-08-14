@@ -1,5 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
 # \#\# 📄 **Assignment 3: Document Validation Layer**
 
 **Service goal:**
@@ -420,7 +418,3 @@ Expected:
 - Assignment 3 new tests ✅
 
 ***
-
-If you want, I can now **merge Assignment 1, 2, and 3** into one continuous descriptive-comment source so you have a fully documented, multi-stage loan processing service in one view.
-Do you want me to prepare that?
-

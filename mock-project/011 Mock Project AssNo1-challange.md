@@ -1,5 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
 # \#\# **Assignment 1: Basic Loan Application Intake**
 
 ### **1) Complete Assignment Description**
@@ -452,7 +450,3 @@ python -m unittest discover tests
 
 
 ***
-
-If you’d like, I can now also **generate a fully restored Python version** from these descriptive comments so that you can run it again.
-Do you want me to do that?
-
