@@ -36,6 +36,7 @@ Each example provides clear separation of concerns, making Fakes easy to swap fo
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
+// Fake is used instead of real CurrencyRateRepository, enabling test isolation without remote calls.
 // Fake for CurrencyRateRepository for testing (all in-memory)
 class FakeCurrencyRateRepository implements CurrencyRateRepository {
     private final Map<String, Double> rates = new HashMap<>();
@@ -62,7 +63,6 @@ class CurrencyConverterServiceTest {
     }
 }
 
-// Fake is used instead of real CurrencyRateRepository, enabling test isolation without remote calls.
 ```
 
 
@@ -105,6 +105,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import java.util.*;
 
+// The Fake replaces the real dispatcher, tracking calls in-memory for test verification.
+
 class FakeNotificationDispatcher implements NotificationDispatcher {
     List<String> sent = new ArrayList<>();
     public void dispatch(String message) { sent.add(message); }
@@ -121,7 +123,6 @@ class TemperatureMonitorTest {
     }
 }
 
-// The Fake replaces the real dispatcher, tracking calls in-memory for test verification.
 ```
 
 
@@ -161,6 +162,7 @@ interface NotificationDispatcher { void dispatch(String message); }
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import java.util.*;
+// Fake allows full control of test data and simulates persistence.
 
 class FakeAccountStore implements AccountStore {
     Map<String, Double> accounts = new HashMap<>();
@@ -189,7 +191,6 @@ class TransferServiceTest {
     }
 }
 
-// Fake allows full control of test data and simulates persistence.
 ```
 
 
@@ -238,6 +239,8 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDate;
 import java.util.*;
 
+// Fake lets you configure and verify limit logic with no external DB.
+
 class FakeBudgetLimitStore implements BudgetLimitStore {
     final Map<String, Double> limits = new HashMap<>();
     public void setLimit(String category, double limit) { limits.put(category, limit); }
@@ -255,7 +258,6 @@ class ExpenseBlockerTest {
     }
 }
 
-// Fake lets you configure and verify limit logic with no external DB.
 ```
 
 
@@ -299,6 +301,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import java.util.*;
 
+// Fake is used for full inspection of log calls during tests.
+
 class FakeSensorLogger implements SensorLogger {
     final List<Double> logged = new ArrayList<>();
     public void log(double v) { logged.add(v); }
@@ -314,7 +318,6 @@ class SensorServiceTest {
     }
 }
 
-// Fake is used for full inspection of log calls during tests.
 ```
 
 

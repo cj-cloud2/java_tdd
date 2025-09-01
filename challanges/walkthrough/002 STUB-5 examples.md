@@ -54,6 +54,19 @@ class NotificationServiceTest {
 // It's a simple Java class that allows the test to simulate different user settings.
 // Where: Used directly in test methods, injected into service.
 // How: Constructor parameter determines simulated DND setting.
+
+// STUB: Hardcoded to simulate settings
+class UserSettingsProviderStub implements UserSettingsProvider {
+    private final boolean doNotDisturb;
+
+    public UserSettingsProviderStub(boolean doNotDisturb) {
+        this.doNotDisturb = doNotDisturb;
+    }
+    @Override
+    public boolean isDoNotDisturbEnabled(String username) {
+        return doNotDisturb;
+    }
+}
 ```
 
 
@@ -88,18 +101,7 @@ interface UserSettingsProvider {
     boolean isDoNotDisturbEnabled(String username);
 }
 
-// STUB: Hardcoded to simulate settings
-class UserSettingsProviderStub implements UserSettingsProvider {
-    private final boolean doNotDisturb;
 
-    public UserSettingsProviderStub(boolean doNotDisturb) {
-        this.doNotDisturb = doNotDisturb;
-    }
-    @Override
-    public boolean isDoNotDisturbEnabled(String username) {
-        return doNotDisturb;
-    }
-}
 ```
 
 
@@ -133,6 +135,12 @@ class PaymentProcessorTest {
 }
 
 // Stub used where fee depends on account type. The stub class returns the type set in its constructor.
+
+class AccountTypeProviderStub implements AccountTypeProvider {
+    private final String type;
+    public AccountTypeProviderStub(String type) { this.type = type; }
+    @Override public String getAccountType(String userId) { return type; }
+}
 ```
 
 
@@ -156,11 +164,7 @@ class PaymentProcessor {
 interface AccountTypeProvider {
     String getAccountType(String userId);
 }
-class AccountTypeProviderStub implements AccountTypeProvider {
-    private final String type;
-    public AccountTypeProviderStub(String type) { this.type = type; }
-    @Override public String getAccountType(String userId) { return type; }
-}
+
 ```
 
 
@@ -196,6 +200,13 @@ class InventoryManagerTest {
 }
 
 // Stub Explanation: SupplierServiceStub's constructor sets supplied availability. Used directly to inject simulated supplier status.
+
+class SupplierServiceStub implements SupplierService {
+    private final boolean inStock;
+    public SupplierServiceStub(boolean inStock) { this.inStock = inStock; }
+    @Override public boolean hasStock(String item) { return inStock; }
+    @Override public void order(String item, int quantity) { /* do nothing */ }
+}
 ```
 
 
@@ -219,12 +230,6 @@ class InventoryManager {
 interface SupplierService {
     boolean hasStock(String item);
     void order(String item, int quantity);
-}
-class SupplierServiceStub implements SupplierService {
-    private final boolean inStock;
-    public SupplierServiceStub(boolean inStock) { this.inStock = inStock; }
-    @Override public boolean hasStock(String item) { return inStock; }
-    @Override public void order(String item, int quantity) { /* do nothing */ }
 }
 ```
 
@@ -259,6 +264,12 @@ class EmailCheckerTest {
 }
 
 // Stub simulates allowed domains, receiving them at construction and making them available to the service.
+
+class AllowedDomainsProviderStub implements AllowedDomainsProvider {
+    private final Set<String> domains;
+    public AllowedDomainsProviderStub(Set<String> domains) { this.domains = domains; }
+    @Override public Set<String> getAllowedDomains() { return domains; }
+}
 ```
 
 
@@ -277,11 +288,6 @@ class EmailChecker {
 }
 interface AllowedDomainsProvider {
     Set<String> getAllowedDomains();
-}
-class AllowedDomainsProviderStub implements AllowedDomainsProvider {
-    private final Set<String> domains;
-    public AllowedDomainsProviderStub(Set<String> domains) { this.domains = domains; }
-    @Override public Set<String> getAllowedDomains() { return domains; }
 }
 ```
 
@@ -316,6 +322,14 @@ class DiscountServiceTest {
 }
 
 // Stub simulates user loyalty, injected at construction. Tests can thus assert discounting logic in isolation.
+
+class LoyaltyStatusProviderStub implements LoyaltyStatusProvider {
+    private final boolean loyal;
+    public LoyaltyStatusProviderStub(boolean loyal) { this.loyal = loyal; }
+    @Override public boolean isLoyal(String userId) { return loyal; }
+}
+
+
 ```
 
 
@@ -337,11 +351,7 @@ class DiscountService {
 interface LoyaltyStatusProvider {
     boolean isLoyal(String userId);
 }
-class LoyaltyStatusProviderStub implements LoyaltyStatusProvider {
-    private final boolean loyal;
-    public LoyaltyStatusProviderStub(boolean loyal) { this.loyal = loyal; }
-    @Override public boolean isLoyal(String userId) { return loyal; }
-}
+
 ```
 
 
