@@ -1,4 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
 
 # Assignment 3: Integrate Credit Score Check
 
@@ -575,6 +574,3 @@ The service now provides comprehensive loan application processing:
 - Maintained clean separation of concerns with dedicated validation methods
 - Applied consistent error handling patterns across all validation layers
 - Used dependency injection to maintain testability with multiple dependencies
-
-The service is now ready for Assignment 4, where we'll add employment verification as the final validation step before loan approval.
-

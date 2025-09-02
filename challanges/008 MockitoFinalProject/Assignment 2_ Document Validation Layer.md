@@ -1,4 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
 
 # Assignment 2: Document Validation Layer
 
@@ -740,31 +739,3 @@ The service now provides a complete document validation layer:
 - Used dependency injection to integrate external services
 - Separated concerns with dedicated validation methods
 - Handled multiple validation scenarios with clear status codes
-
-The service is now ready for Assignment 3, where we'll integrate credit score checking while maintaining all existing functionality.
-<span style="display:none">[^1][^10][^11][^2][^3][^4][^5][^6][^7][^8][^9]</span>
-
-<div style="text-align: center">⁂</div>
-
-[^1]: https://stackoverflow.com/questions/73873018/creating-a-junit-5-test-suite-with-multiple-classes-setup-and-cleanup
-
-[^2]: https://www.baeldung.com/junit-5-nested-test-classes
-
-[^3]: https://docs.junit.org/current/user-guide/
-
-[^4]: https://www.baeldung.com/parameterized-tests-junit-5
-
-[^5]: https://www.vogella.com/tutorials/JUnit/article.html
-
-[^6]: https://www.testwithspring.com/lesson/the-best-practices-of-nested-unit-tests/
-
-[^7]: https://stackoverflow.com/questions/30565988
-
-[^8]: https://www.browserstack.com/guide/junit-nested-tests
-
-[^9]: https://stackoverflow.com/questions/6906032/many-test-classes-or-one-test-class-with-many-methods
-
-[^10]: https://stackoverflow.com/questions/39198848/mock-methods-in-same-class
-
-[^11]: https://www.browserstack.com/guide/unit-tests-with-junit-and-mockito
-
