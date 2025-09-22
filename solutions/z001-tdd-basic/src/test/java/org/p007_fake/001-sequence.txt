@@ -1,5 +1,0 @@
-CurrencyConverterServiceTest
-TemperatureMonitorTest
-TransferServiceTest
-ExpenseBlockerTest
-SensorServiceTest
