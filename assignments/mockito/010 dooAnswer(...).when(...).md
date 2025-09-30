@@ -32,26 +32,6 @@ doAnswer(invocation -> {
 
 ## Key Use Cases
 
-### Stubbing Void Methods
-
-When working with void methods, `doAnswer()` is particularly valuable since you cannot use `when().thenReturn()` :
-
-```java
-@Test
-public void testVoidMethodWithCallback() {
-    BookService service = mock(BookService.class);
-    
-    doAnswer(invocation -> {
-        BookServiceCallback callback = (BookServiceCallback) invocation.getArguments()[0];
-        callback.onSuccess("Effective Java");
-        return null; // void methods return null
-    }).when(service).queryBookTitle(any(BookServiceCallback.class));
-    
-    service.queryBookTitle(callback);
-    // Verify callback was triggered
-}
-```
-
 
 ### Dynamic Return Values Based on Arguments
 
