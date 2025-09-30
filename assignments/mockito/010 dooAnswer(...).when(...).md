@@ -1,6 +1,6 @@
 # doAnswer(...).when(...)
 
-The `doAnswer().when()` method in Mockito is a powerful stubbing technique that allows you to define custom behavior for mocked methods, providing far more flexibility than simple return values or exceptions.[^1]
+The `doAnswer().when()` method in Mockito is a powerful stubbing technique that allows you to define custom behavior for mocked methods, providing far more flexibility than simple return values or exceptions.
 
 ## Core Functionality
 
