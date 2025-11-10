@@ -1,0 +1,16 @@
+v1.0-code_in_main-read_text_file
+v1.1-moved_file_loading_into_function
+v1.2-file_loading_in_its_own_class
+v1.3-using_lambda_to_load_data
+v1.4-refactore_and_abstract_DataSource_away
+v1.5-initial_testing
+v1.5-introduced_mockito_and_how_mocks_work
+v1.5-introducing_mocking
+v1.5-mocked_datasource
+v1.5-testing_loosely_coupled_interface_testable
+v1.5-testing_loosely_coupled_still_untestable
+v1.5-testing_tightly_coupled_code
+v1.5-tests_completed_code_refactored
+v1.6-converted_to_generics
+v1.6.1-generic_example_using_PriorityQueue
+v1.6.2-generic_example_using_Stack

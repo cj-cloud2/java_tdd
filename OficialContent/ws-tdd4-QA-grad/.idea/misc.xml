@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/java-why-spy/java-why-spy/pom.xml" />
+        <option value="$PROJECT_DIR$/tdd_file_loader/tdd_file_loader/pom.xml" />
+        <option value="$PROJECT_DIR$/mocking_explored/mocking_explored/pom.xml" />
+        <option value="$PROJECT_DIR$/string-tokeniser/string-tokeniser/pom.xml" />
+        <option value="$PROJECT_DIR$/find-highest-number/find-highest-number/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" default="true" project-jdk-name="24" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
